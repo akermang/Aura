@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html -->
+<html lang="en" class="ui-mobile"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html">--><base href=".">
+  <meta name="Modified" content="1523364293906"> 
+  <title>Customer List</title> 
+  <!-- META --> 
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="Pragma" content="no-cache"> 
+  <meta http-equiv="Expires" content="0"> 
+  <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate"> 
+  <meta http-equiv="last-modified" content="1523364293906"> 
+  <meta name="Created-By" content="manager"> 
+  <meta name="Creation-Timestamp" content="1523364293906"> 
+  <!-- CSS imports --> 
+  <link rel="stylesheet" href="./Customer List_files/jquery.mobile-1.4.5.min.css"> 
+  <link rel="stylesheet" href="./Customer List_files/jquery.mobile.theme-1.4.5.min.css"> 
+  <link rel="stylesheet" href="./Customer List_files/jquery-ui-1.10.1.custom.min.css"> 
+  <link rel="stylesheet" href="./Customer List_files/nativedroid2.css"> 
+  <link rel="stylesheet" href="./Customer List_files/bootstrap.min.css"> 
+  <link rel="stylesheet" href="./Customer List_files/android.css"> 
+  <link rel="stylesheet" href="./Customer List_files/hamburger.css"> 
+  <!-- Javascript imports --> 
+  <script type="text/javascript" src="./Customer List_files/jquery.min.js.הורד"></script> 
+  <script type="text/javascript" src="./Customer List_files/jquery-dateFormat.min.js.הורד"></script> 
+  <script type="text/javascript" src="./Customer List_files/jquery.mobile-1.4.5.min.js.הורד"></script> 
+  <script type="text/javascript" src="./Customer List_files/jquery-ui-1.10.1.custom.min.js.הורד"></script> 
+  <script type="text/javascript" src="./Customer List_files/nativedroid2.js.הורד"></script> 
+  <!-- <script type="text/javascript" src="../../res/bootstrap/js/bootstrap.min.js"></script> --> 
+  <!-- AuraPlayer imports --> 
+  <script type="text/javascript" src="./Customer List_files/auraplayer.js.הורד"></script> 
+  <script type="text/javascript" src="./Customer List_files/app.common.js.הורד"></script> 
+  <script type="text/javascript" src="./Customer List_files/handlerMap_1523364293906.json"></script> 
+  <script type="text/javascript" src="./Customer List_files/custom_js_1523364293906.js.הורד"></script> 
+  <style>
+            @media (max-width: 550px) {
+#pageTitle {
+    margin-left: 120px;
+    text-align: left !important;
+  }
+}
+
+.body {
+    background-color: #ffffff !important;
+}
+
+button {
+    text-shadow: none !important;
+}
+
+.ui-input-text input:focus, .ui-input-search input:focus {
+    border-bottom-color: #329999;
+}
+
+input[required]:invalid  {
+	border-bottom: 2px solid #B94A48 !important;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+    background-color: #ffffff !important;
+}
+
+.ui-overlay-b, .ui-page-theme-b, .ui-page-theme-b .ui-panel-wrapper {
+    background-color: #ffffff !important;
+}
+
+.nd2-bg-500 {
+    background-color: #329999;
+    color: #ffffff;
+}
+
+.ui-page-theme-a .ui-header {
+    background-color: #329999;
+    color: #ffffff;
+}
+
+.ui-page-theme-b .ui-header {
+    background-color: #329999;
+    color: #ffffff;
+}
+
+.ui-page-theme-a .ui-footer {
+    background-color: #ffffff;
+    color: #323232;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.1);
+}
+
+li.ui-tabs-active > .ui-link.ui-btn.ui-tabs-anchor,
+.ui-page-theme-a .ui-btn.clr-primary {
+    color: #329999;
+}
+
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a,
+.ui-page-theme-a a:hover, html .ui-bar-a a:hover, html .ui-body-a a:hover, html body .ui-group-theme-a a:hover,
+.ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited  {
+    color: #329999;
+}
+
+.ios-btn {
+    background-color: #329999 !important;
+}
+
+.ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head+body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head+body .ui-btn.ui-btn-b:visited {
+    background-color: #329999;
+}
+.ui-page-theme-a .ui-btn.clr-warning {
+    color: rgb(244,67,54);
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-raised.clr-primary {
+    background-color: #329999;
+    color: rgba(255,255,255,0.85);
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-raised.clr-warning {
+    background-color: rgb(244,67,54);
+    color: rgba(255,255,255,0.85);
+}
+
+.ui-page-theme-a .ui-radio .ui-btn.ui-radio-on:before {
+    background-color: #329999;
+}
+
+.ui-page-theme-a .ui-btn.ui-radio-on:after {
+    border-color: #329999;
+}
+
+html body .ui-page-theme-a .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
+    background-color: #329999;
+    border-color: #329999;
+}
+
+.ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-checkbox-on,
+.ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-radio-on {
+    background-color: #329999;
+    color: #ffffff;
+}
+
+.ui-input-text.ui-focus:after,
+.ui-input-search.ui-focus:after {
+    background-color: #329999;
+    height: 2px;
+}
+
+textarea.ui-input-text.ui-textinput-autogrow.ui-focus {
+    border-bottom: 2px solid #329999;
+}
+
+.ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active {
+    color: #ffffff !important;
+    background-color: #329999 !important;
+}
+
+.ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active,
+.ui-slider-track .ui-btn.ui-slider-handle {
+    background-color: #329999 !important;
+}
+
+.ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-body-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head+body .ui-btn.ui-btn-b:hover {
+    background-color: #329999 !important;
+}
+
+        </style> 
+ </head> 
+ <body dir="LTR" id="mainBody" style="" class="ui-mobile-viewport ui-overlay-a"> 
+  <script type="text/javascript">
+	var showStatusMessages = false;
+	var origRequestFields;
+	
+	$(function () {
+	    origRequestFields = $('#requestFields').clone();
+	    setDefaultValues();
+	    initData();
+	
+
+
+	    
+	    validateRequiredFields();
+	    
+	    $('input').on('input blur', function() {
+	    	setTimeout(validateRequiredFields, 200);
+		});
+	});
+	
+	var defaultValues = {};
+	
+	
+	function showInputScreen() {
+	    setDefaultValues();
+	    refreshInputElements();
+	
+	    $("#requestPart").show();
+	    $("#responsePart").hide();
+	
+	    clearOutputFields();
+	}
+	
+	//handler for request sent
+	function sendRequestHandler() {
+	    document.getElementById("responsePart").style.display = 'none';
+	    spinner().start("Executing..", "a");
+	}
+	
+	//handler for response received
+	function receiveResponseHandler(response, serviceName, status, populateFields) {
+	    spinner().stop();
+	
+	    if (typeof(populateFields) === 'undefined' || populateFields) {
+	        //show output params
+	
+	        document.getElementById("responsePart").style.display = '';
+	        validateRequiredFields();
+	    }
+	}
+	
+    //init function
+    $(function () {
+        removeDuplicatedFields();
+    });
+</script> 
+  <div id="mainPage" data-role="page" data-theme="a" class="ui-page ui-page-theme-a ui-page-active" data-url="mainPage" tabindex="0" style=""> 
+   <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a"> 
+    <div class="container-fluid"> 
+     <div class="row"> 
+      <a id="titleRow-button" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#leftpanel" class="ui-btn ui-btn-active" style="color:#ffffff; "><h3>☰</h3></a> 
+      <div class="col-xs-1" style="padding: 12px 8px"> 
+       <a href="javascript:navigate(&#39;Login.html&#39;)" class="ui-link"><img src="./Customer List_files/logo4.png" width="120px"></a> 
+      </div> 
+      <div class="col-xs-9" style="padding: 12px 8px; color:#ffffff"> 
+       <h3 id="pageTitle" style="text-align: center">Customer List</h3> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div data-role="main" class="ui-content"> 
+    <div class="container-fluid"> 
+     <div class="row" style="padding: 12px 8px"> 
+      <div style="font-size: 20px; font-family: arial,serif;
+	                        color:#ffffff"></div> 
+     </div> 
+     <div> 
+      <div id="requestPart" name="requestPart"> 
+       <div class="row" id="requestFields" style="padding: 12px 8px"> 
+        <form style="width: 98%"> 
+        </form> 
+       </div> 
+       <div class="row" id="responseField" style="padding: 12px 8px"> 
+        <form id="responseForm" style="width: 100%"> 
+        </form> 
+       </div> 
+      </div> 
+      <div id="responsePart" name="responsePart" style=""> 
+       <form class="ui-filterable"><div class="ui-input-search ui-shadow-inset ui-input-has-clear ui-body-inherit ui-corner-all"><input data-type="search" placeholder="Filter items..."><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" tabindex="-1" aria-hidden="true" class="ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a></div></form><ul id="listOutput" data-role="listview" data-filter="true" class="ui-listview"> 
+        <li style="display: none;" class="ui-first-child ui-last-child"><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+          <div id="listOutputHead" class="ui-grid-a"> 
+           <div id="S_CUSTOMER_NAME_0" display-format="%s" style="font-weight: bolder" class="ui-block-a">Unisports</div> 
+           <div id="S_CUSTOMER_ID_0" display-format="%s" style="font-weight: bolder" class="ui-block-b">201</div> 
+           <div id="S_CUSTOMER_CREDIT_RATING_0" display-format="%s" style="font-weight: bolder" class="ui-block-c">GOOD</div> 
+           <div id="S_CUSTOMER_COUNTRY_0" display-format="%s" style="font-weight: bolder" class="ui-block-d">Brazil</div> 
+           <div id="S_CUSTOMER_STATE_0" display-format="%s" style="font-weight: bolder" class="ui-block-e"></div> 
+          </div> </a></li> 
+       <li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Unisports
+</div>
+<div class="ui-block-b">
+	201
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Brazil
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Simms Atheletics City
+</div>
+<div class="ui-block-b">
+	202
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	POOR
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Japan
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Delhi Sports street
+</div>
+<div class="ui-block-b">
+	203
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	EXCELLENT
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	India
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	WA
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Womansport
+</div>
+<div class="ui-block-b">
+	204
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	EXCELLENT
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	Washington
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Kam's Sporting Goods
+</div>
+<div class="ui-block-b">
+	205
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	EXCELLENT
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	China
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Sportique
+</div>
+<div class="ui-block-b">
+	206
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	POOR
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	France
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Sweet Rock Sports
+</div>
+<div class="ui-block-b">
+	207
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Nigeria
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	MA
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Muench Sports
+</div>
+<div class="ui-block-b">
+	208
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Germany H.
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	NJ
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Beisbol Si!
+</div>
+<div class="ui-block-b">
+	209
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	EXCELLENT
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	DR
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	Guayacanes
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Futbol Sonora
+</div>
+<div class="ui-block-b">
+	210
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	EXCELLENT
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Mexico
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Kuhn's Sports
+</div>
+<div class="ui-block-b">
+	211
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	EXCELLENT
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Czechoslovakia
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Hamada Sport
+</div>
+<div class="ui-block-b">
+	212
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	EXCELLENT
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Egypt
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Big John's Sports Emporium
+</div>
+<div class="ui-block-b">
+	213
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	EXCELLENT
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	NY
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Ojibway Retail
+</div>
+<div class="ui-block-b">
+	214
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	POOR
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	NY
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Sporta Russia
+</div>
+<div class="ui-block-b">
+	215
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	POOR
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Russia
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	AAA Electronics
+</div>
+<div class="ui-block-b">
+	43228
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	CA
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Electra Superstore
+</div>
+<div class="ui-block-b">
+	47006
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	POOR
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	CA
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	All Tech Outfitters
+</div>
+<div class="ui-block-b">
+	31672
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	CA
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Delhi Sports Goods2
+</div>
+<div class="ui-block-b">
+	12118
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	NY
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	SuperTech Center
+</div>
+<div class="ui-block-b">
+	15673
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	POOR
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	CA
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Mainstreet electronics
+</div>
+<div class="ui-block-b">
+	48803
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	CA
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Test Company
+</div>
+<div class="ui-block-b">
+	4242
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	0
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Comp U - Sevice desk
+</div>
+<div class="ui-block-b">
+	9450
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	CA
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Mia
+</div>
+<div class="ui-block-b">
+	997799
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	USA
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	NJ
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	Transfer Solutions
+</div>
+<div class="ui-block-b">
+	4141
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	0
+</div>
+	
+</div>
+</a></li><li><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+	cb2
+</div>
+<div class="ui-block-b">
+	88771
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	GOOD
+</div>
+<div style="font-weight:normal" class="ui-block-b">
+	Australia
+</div>
+<div style="font-weight:normal" class="ui-block-a">
+	WA
+</div>
+	
+</div>
+</a></li></ul> 
+       <div id="spacerAbovePopups" style="height:30px"></div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="leftpanel" data-role="panel" data-display="overlay" data-position-fixed="true" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-inherit ui-panel-fixed ui-panel-animate ui-panel-open"> 
+    <div class="ui-panel-inner"><span id="hamburger-title">Menu</span><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" id="hamburger-close" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-rel="close"></a><ul data-role="listview" style="margin-top: 45px" class="ui-listview"> 
+     <li data-icon="ui-icon-blank" class="ui-first-child"><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-ui-icon-blank">Login</a></li> 
+     <li data-icon="ui-icon-blank" class="ui-last-child"><a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-ui-icon-blank">Customer List</a></li> 
+    </ul></div> 
+     
+     
+   </div> 
+   <!-- Info popup - single OK button --> 
+   <div style="display: none;" id="infoPopup-placeholder"><!-- placeholder for infoPopup --></div> 
+   <!-- Confirm popup - OK, Cancel buttons --> 
+   <div style="display: none;" id="confirmPopup-placeholder"><!-- placeholder for confirmPopup --></div> 
+  <div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="infoPopup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="infoPopup-popup"><div data-role="popup" id="infoPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;" class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all"> 
+    <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a"> 
+     <h1 id="infoPopupTitle" class="ui-title" role="heading" aria-level="1"></h1> 
+    </div> 
+    <div role="main" class="ui-content"> 
+     <p id="infoPopupMessage"></p> 
+     <span style="padding: 1px;"></span> 
+     <a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-a" data-rel="back">OK</a> 
+    </div> 
+   </div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="confirmPopup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="confirmPopup-popup"><div data-role="popup" id="confirmPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;" class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all"> 
+    <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a"> 
+     <h1 id="confirmPopupTitle" class="ui-title" role="heading" aria-level="1"></h1> 
+    </div> 
+    <div role="main" class="ui-content"> 
+     <p id="confirmPopupMessage"></p> 
+     <div style="padding: 10px;"></div> 
+     <a id="confirmPopupOk" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back" data-transition="flow">OK</a> 
+     <a id="confirmPopupCancel" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/CustomerList.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Cancel</a> 
+    </div> 
+   </div></div></div>   
+ 
+<div class="ui-panel-dismiss ui-panel-dismiss-position-left ui-panel-dismiss-display-overlay ui-panel-dismiss-open" style="height: 2280px;"></div><div class="ui-loader ui-corner-all ui-body-z ui-loader-verbose"><span class="ui-icon-loading"></span><h1>Executing..</h1></div></body></html>
